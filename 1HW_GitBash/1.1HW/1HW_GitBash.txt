@@ -1,0 +1,499 @@
+Первая часть первого  ДЗ  ))
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я - pwd
+2) Создать папку mkdir folder
+3) Зайти в папку cd folder
+4) Создать 3 папки mkdir folder_1 folder_2 folder_3
+5) Зайти в любоую папку cd folder_1
+6) Создать 5 файлов (3 txt, 2 json) touch 1.txt 2.txt 3.txt 4.json 5.json
+7) Создать 3 папки mkdir folder_1_1 folder_1_2 folder_1_3
+8. Вывести список содержимого папки ls -la
+9) + Открыть любой txt файл cat vim
+10) + написать туда что-нибудь, любой текст. cat > / vim - i
+11) + сохранить и выйти. vim - :wq
+12) Выйти из папки на уровень выше
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. mv
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. cp
+15) Найти файл по имени find -name
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. tail -h
+17) вывести несколько первых строк из текстового файла head -n
+18) вывести несколько последних строк из текстового файла tail -n
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает. 
+20) вывести дату и время date
+=========
+
+Задание *
+1) Отправить http запрос на сервер. curl
+http://162.55.220.72:5005/terminal-hw-request
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13 script.sh
+
+=====================
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir foldername
+3) Зайти в папку - cd foldername
+
+Решение
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST
+$ pwd
+/c/Users/Денис_Work/Downloads/Telegram Desktop/Задания/TEST
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST
+$ mkdir folder_1
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST
+$ cd folder_1/
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ mkdir folder_1_1 folder_1_2 folder_1_3
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ cd folder_1_1
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1/folder_1_1
+$ touch 1.txt 2.txt 3.txt 4.json 5.json
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1/folder_1_1
+$ mkdir folder_1_1_1 folder_1_1_2 folder_1_1_3
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1/folder_1_1
+$ ls -la
+total 4
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 09:17 ./
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 09:16 ../
+-rw-r--r-- 1 Денис_Work 197121 0 Feb 18 09:17 1.txt
+-rw-r--r-- 1 Денис_Work 197121 0 Feb 18 09:17 2.txt
+-rw-r--r-- 1 Денис_Work 197121 0 Feb 18 09:17 3.txt
+-rw-r--r-- 1 Денис_Work 197121 0 Feb 18 09:17 4.json
+-rw-r--r-- 1 Денис_Work 197121 0 Feb 18 09:17 5.json
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 09:17 folder_1_1_1/
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 09:17 folder_1_1_2/
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 09:17 folder_1_1_3/
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1/folder_1_1
+$ vim 1.txt
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1/folder_1_1
+$ cat > 1.txt
+
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1/folder_1_1
+$ cat 1.txt
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1/folder_1_1
+$ vim 1.txt
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1/folder_1_1
+$ cat 1.txt
+1 строка
+2 строка
+3 строка
+4 строка
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1/folder_1_1
+$ cd ..
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ ls -la
+total 8
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 09:16 ./
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 09:15 ../
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 09:21 folder_1_1/
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 09:16 folder_1_2/
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 09:16 folder_1_3/
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ mv folder_1_1/1.txt folder_1_1_1
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ cat > 1.txt
+1 строка
+2 строка
+3 строка
+4 строка
+
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ ls -la
+total 13
+drwxr-xr-x 1 Денис_Work 197121  0 Feb 18 09:28 ./
+drwxr-xr-x 1 Денис_Work 197121  0 Feb 18 09:15 ../
+-rw-r--r-- 1 Денис_Work 197121 60 Feb 18 09:29 1.txt
+drwxr-xr-x 1 Денис_Work 197121  0 Feb 18 09:27 folder_1_1/
+drwxr-xr-x 1 Денис_Work 197121  0 Feb 18 09:16 folder_1_2/
+drwxr-xr-x 1 Денис_Work 197121  0 Feb 18 09:16 folder_1_3/
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ mv 1.txt folder_1_1
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ mv folder_1_1/1.txt folder_1_1/folder_1_1_1
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ mv folder_1_1/2.txt folder_1_1/folder_1_1_2
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ cp folder_1_1/3.txt folder_1_1/folder_1_1_3
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ cp folder_1_1/4.json folder_1_1/folder_1_1_3
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ find 3.json
+find: ‘3.json’: No such file or directory
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ find .. 3.json
+..
+../folder_1
+../folder_1/folder_1_1
+../folder_1/folder_1_1/3.txt
+../folder_1/folder_1_1/4.json
+../folder_1/folder_1_1/5.json
+../folder_1/folder_1_1/folder_1_1_1
+../folder_1/folder_1_1/folder_1_1_1/1.txt
+../folder_1/folder_1_1/folder_1_1_2
+../folder_1/folder_1_1/folder_1_1_2/2.txt
+../folder_1/folder_1_1/folder_1_1_3
+../folder_1/folder_1_1/folder_1_1_3/3.txt
+../folder_1/folder_1_1/folder_1_1_3/4.json
+../folder_1/folder_1_2
+../folder_1/folder_1_3
+find: ‘3.json’: No such file or directory
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ find 4.json
+find: ‘4.json’: No such file or directory
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ find .. 4.json
+..
+../folder_1
+../folder_1/folder_1_1
+../folder_1/folder_1_1/3.txt
+../folder_1/folder_1_1/4.json
+../folder_1/folder_1_1/5.json
+../folder_1/folder_1_1/folder_1_1_1
+../folder_1/folder_1_1/folder_1_1_1/1.txt
+../folder_1/folder_1_1/folder_1_1_2
+../folder_1/folder_1_1/folder_1_1_2/2.txt
+../folder_1/folder_1_1/folder_1_1_3
+../folder_1/folder_1_1/folder_1_1_3/3.txt
+../folder_1/folder_1_1/folder_1_1_3/4.json
+../folder_1/folder_1_2
+../folder_1/folder_1_3
+find: ‘4.json’: No such file or directory
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ find -n 4.json
+find: unknown predicate `-n'
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ find -name 4.json
+./folder_1_1/4.json
+./folder_1_1/folder_1_1_3/4.json
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ find -name *.json
+./folder_1_1/4.json
+./folder_1_1/5.json
+./folder_1_1/folder_1_1_3/4.json
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ grep -t folder_1_1/folder_1_1_1/1.txt
+grep: unknown option -- t
+Usage: grep [OPTION]... PATTERN [FILE]...
+Try 'grep --help' for more information.
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ grep --help
+Usage: grep [OPTION]... PATTERN [FILE]...
+Search for PATTERN in each FILE or standard input.
+PATTERN is, by default, a basic regular expression (BRE).
+Example: grep -i 'hello world' menu.h main.c
+
+Regexp selection and interpretation:
+  -E, --extended-regexp     PATTERN is an extended regular expression (ERE)
+  -F, --fixed-strings       PATTERN is a set of newline-separated strings
+  -G, --basic-regexp        PATTERN is a basic regular expression (BRE)
+  -P, --perl-regexp         PATTERN is a Perl regular expression
+  -e, --regexp=PATTERN      use PATTERN for matching
+  -f, --file=FILE           obtain PATTERN from FILE
+  -i, --ignore-case         ignore case distinctions
+  -w, --word-regexp         force PATTERN to match only whole words
+  -x, --line-regexp         force PATTERN to match only whole lines
+  -z, --null-data           a data line ends in 0 byte, not newline
+
+Miscellaneous:
+  -s, --no-messages         suppress error messages
+  -v, --invert-match        select non-matching lines
+  -V, --version             display version information and exit
+      --help                display this help text and exit
+
+Output control:
+  -m, --max-count=NUM       stop after NUM matches
+  -b, --byte-offset         print the byte offset with output lines
+  -n, --line-number         print line number with output lines
+      --line-buffered       flush output on every line
+  -H, --with-filename       print the file name for each match
+  -h, --no-filename         suppress the file name prefix on output
+      --label=LABEL         use LABEL as the standard input file name prefix
+  -o, --only-matching       show only the part of a line matching PATTERN
+  -q, --quiet, --silent     suppress all normal output
+      --binary-files=TYPE   assume that binary files are TYPE;
+                            TYPE is 'binary', 'text', or 'without-match'
+  -a, --text                equivalent to --binary-files=text
+  -I                        equivalent to --binary-files=without-match
+  -d, --directories=ACTION  how to handle directories;
+                            ACTION is 'read', 'recurse', or 'skip'
+  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;
+                            ACTION is 'read' or 'skip'
+  -r, --recursive           like --directories=recurse
+  -R, --dereference-recursive  likewise, but follow all symlinks
+      --include=FILE_PATTERN  search only files that match FILE_PATTERN
+      --exclude=FILE_PATTERN  skip files and directories matching FILE_PATTERN
+      --exclude-from=FILE   skip files matching any file pattern from FILE
+      --exclude-dir=PATTERN  directories that match PATTERN will be skipped.
+  -L, --files-without-match  print only names of FILEs containing no match
+  -l, --files-with-matches  print only names of FILEs containing matches
+  -c, --count               print only a count of matching lines per FILE
+  -T, --initial-tab         make tabs line up (if needed)
+  -Z, --null                print 0 byte after FILE name
+
+Context control:
+  -B, --before-context=NUM  print NUM lines of leading context
+  -A, --after-context=NUM   print NUM lines of trailing context
+  -C, --context=NUM         print NUM lines of output context
+  -NUM                      same as --context=NUM
+      --color[=WHEN],
+      --colour[=WHEN]       use markers to highlight the matching strings;
+                            WHEN is 'always', 'never', or 'auto'
+  -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)
+  -u, --unix-byte-offsets   report offsets as if CRs were not there
+                            (MSDOS/Windows)
+
+'egrep' means 'grep -E'.  'fgrep' means 'grep -F'.
+Direct invocation as either 'egrep' or 'fgrep' is deprecated.
+When FILE is -, read standard input.  With no FILE, read . if a command-line
+-r is given, - otherwise.  If fewer than two FILEs are given, assume -h.
+Exit status is 0 if any line is selected, 1 otherwise;
+if any error occurs and -q is not given, the exit status is 2.
+
+Report bugs to: bug-grep@gnu.org
+GNU grep home page: <https://www.gnu.org/software/grep/>
+General help using GNU software: <http://www.gnu.org/gethelp/>
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ find -f folder_1_1/folder_1_1_1/1.txt
+
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ tail -f folder_1_1/folder_1_1_1/1.txt
+1 строка
+2 строка
+3 строка
+4 строка
+5 строка
+6 строка
+
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ tail --help
+Usage: tail [OPTION]... [FILE]...
+Print the last 10 lines of each FILE to standard output.
+With more than one FILE, precede each with a header giving the file name.
+
+With no FILE, or when FILE is -, read standard input.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -c, --bytes=[+]NUM       output the last NUM bytes; or use -c +NUM to
+                             output starting with byte NUM of each file
+  -f, --follow[={name|descriptor}]
+                           output appended data as the file grows;
+                             an absent option argument means 'descriptor'
+  -F                       same as --follow=name --retry
+  -n, --lines=[+]NUM       output the last NUM lines, instead of the last 10;
+                             or use -n +NUM to output starting with line NUM
+      --max-unchanged-stats=N
+                           with --follow=name, reopen a FILE which has not
+                             changed size after N (default 5) iterations
+                             to see if it has been unlinked or renamed
+                             (this is the usual case of rotated log files);
+                             with inotify, this option is rarely useful
+      --pid=PID            with -f, terminate after process ID, PID dies
+  -q, --quiet, --silent    never output headers giving file names
+      --retry              keep trying to open a file if it is inaccessible
+  -s, --sleep-interval=N   with -f, sleep for approximately N seconds
+                             (default 1.0) between iterations;
+                             with inotify and --pid=P, check process P at
+                             least once every N seconds
+  -v, --verbose            always output headers giving file names
+  -z, --zero-terminated    line delimiter is NUL, not newline
+      --help     display this help and exit
+      --version  output version information and exit
+
+NUM may have a multiplier suffix:
+b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,
+GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.
+Binary prefixes can be used, too: KiB=K, MiB=M, and so on.
+
+With --follow (-f), tail defaults to following the file descriptor, which
+means that even if a tail'ed file is renamed, tail will continue to track
+its end.  This default behavior is not desirable when you really want to
+track the actual name of the file, not the file descriptor (e.g., log
+rotation).  Use --follow=name in that case.  That causes tail to track the
+named file in a way that accommodates renaming, removal and creation.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/tail>
+or available locally via: info '(coreutils) tail invocation'
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ tail -n[3] folder_1_1/folder_1_1_1/1.txt
+tail: invalid number of lines: ‘[3]’
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ tail -n3 folder_1_1/folder_1_1_1/1.txt
+4 строка
+5 строка
+6 строка
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ tail 3 folder_1_1/folder_1_1_1/1.txt
+tail: cannot open '3' for reading: No such file or directory
+==> folder_1_1/folder_1_1_1/1.txt <==
+1 строка
+2 строка
+3 строка
+4 строка
+5 строка
+6 строка
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ tail -n folder_1_1/folder_1_1_1/1.txt
+tail: invalid number of lines: ‘folder_1_1/folder_1_1_1/1.txt’
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ tail -n 2 folder_1_1/folder_1_1_1/1.txt
+5 строка
+6 строка
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ less folder_1_1/folder_1_1_1/1.txt
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ less -n3 folder_1_1/folder_1_1_1/1.txt
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ less -s folder_1_1/folder_1_1_1/1.txt
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ less -s -N1folder_1_1/folder_1_1_1/1.txt
+Missing filename ("less --help" for help)
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ less -s -N1 folder_1_1/folder_1_1_1/1.txt
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ less -s -N 3 folder_1_1/folder_1_1_1/1.txt
+3: No such file or directory
+Press RETURN to continue
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ less -s -N3 folder_1_1/folder_1_1_1/1.txt
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ date
+Sat Feb 18 10:03:24     2023
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ explorer folder_1_1/folder_1_1_1/1.txt
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ curl://162.55.220.72:5005/terminal-hw-request
+bash: curl://162.55.220.72:5005/terminal-hw-request: No such file or directory
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ curl http://162.55.220.72:5005/terminal-hw-request
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   232  100   232    0     0   1236      0 --:--:-- --:--:-- --:--:--  1247<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ ls -la
+total 12
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 09:30 ./
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 09:15 ../
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 09:31 folder_1_1/
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 09:16 folder_1_2/
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 09:16 folder_1_3/
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
+$ cd ..
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST
+$ ls -la
+total 12
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 09:15 ./
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 09:14 ../
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 09:30 folder_1/
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST
+$ cd ..
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания
+$ ls -ls
+total 13
+4 -rw-r--r-- 1 Денис_Work 197121 2131 Feb  7 23:06 '1 ДЗ GitBash.txt'
+4 drwxr-xr-x 1 Денис_Work 197121    0 Feb 18 09:15  TEST/
+1 -rwxr-xr-x 1 Денис_Work 197121  168 Feb  9 19:25  script.sh*
+4 drwxr-xr-x 1 Денис_Work 197121    0 Feb 12 12:39 'ДЗ Моб_тест'/
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания
+$ vim script.sh
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания
+$ mkdir dir_1
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания
+$ ls -la
+total 21
+drwxr-xr-x 1 Денис_Work 197121    0 Feb 18 10:11  ./
+drwxr-xr-x 1 Денис_Work 197121    0 Feb 18 09:08  ../
+-rw-r--r-- 1 Денис_Work 197121 2131 Feb  7 23:06 '1 ДЗ GitBash.txt'
+drwxr-xr-x 1 Денис_Work 197121    0 Feb 18 09:15  TEST/
+drwxr-xr-x 1 Денис_Work 197121    0 Feb 18 10:11  dir_1/
+-rwxr-xr-x 1 Денис_Work 197121  168 Feb  9 19:25  script.sh*
+drwxr-xr-x 1 Денис_Work 197121    0 Feb 12 12:39 'ДЗ Моб_тест'/
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания
+$ vim script.sh
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания
+$ script.sh
+bash: script.sh: command not found
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания
+$ ./script.sh
+total 4
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 10:13 .
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 10:13 ..
+-rw-r--r-- 1 Денис_Work 197121 0 Feb 18 10:13 1.txt
+-rw-r--r-- 1 Денис_Work 197121 0 Feb 18 10:13 2.txt
+-rw-r--r-- 1 Денис_Work 197121 0 Feb 18 10:13 3.txt
+-rw-r--r-- 1 Денис_Work 197121 0 Feb 18 10:13 4.json
+-rw-r--r-- 1 Денис_Work 197121 0 Feb 18 10:13 5.json
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 10:13 dir_1_1_1
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 10:13 dir_1_1_2
+drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 10:13 dir_1_1_3
+
+Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания
+
+
