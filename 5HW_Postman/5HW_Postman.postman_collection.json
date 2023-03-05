@@ -1,0 +1,522 @@
+{
+	"info": {
+		"_postman_id": "9a6fd6c2-594e-4286-b746-365c72b0f7cb",
+		"name": "5HW_Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26176457"
+	},
+	"item": [
+		{
+			"name": "/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/first",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/first",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"first"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/get_method",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/get_method?age=36&name=Denis",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"get_method"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "36"
+						},
+						{
+							"key": "name",
+							"value": "Denis"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user_info_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Denis",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "36",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "77",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/user_info_1",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"user_info_1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user_info_3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Denis",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "36",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "65000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/user_info_3",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"user_info_3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user_info_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Denis",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "36",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "65000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/user_info_2",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"user_info_2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/object_info_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Denis",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "36",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "65000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_1?age=36&name=Denis&weight=77",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_1"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "36"
+						},
+						{
+							"key": "name",
+							"value": "Denis"
+						},
+						{
+							"key": "weight",
+							"value": "77"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/object_info_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Denis",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "36",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "65000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_2?age=36&name=Denis&salary=65000",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_2"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "36"
+						},
+						{
+							"key": "name",
+							"value": "Denis"
+						},
+						{
+							"key": "salary",
+							"value": "65000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/object_info_3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Denis",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "36",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "65000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_3?age=36&name=Denis&salary=65000",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_3"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "36"
+						},
+						{
+							"key": "name",
+							"value": "Denis"
+						},
+						{
+							"key": "salary",
+							"value": "65000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/object_info_4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Denis",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "36",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "65000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_4?age=36&name=Denis&salary=65000",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_4"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "36"
+						},
+						{
+							"key": "name",
+							"value": "Denis"
+						},
+						{
+							"key": "salary",
+							"value": "65000"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
