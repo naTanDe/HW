@@ -27,8 +27,7 @@ Linux terminal (GitBash) commands
 =========
 
 Задание *
-1) Отправить http запрос на сервер. curl
-http://162.55.220.72:5005/terminal-hw-request
+1) Отправить http запрос на сервер. curl http://162.55.220.72:5005/terminal-hw-request
 2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13 script.sh
 
 =====================
@@ -143,10 +142,6 @@ $ cp folder_1_1/3.txt folder_1_1/folder_1_1_3
 $ cp folder_1_1/4.json folder_1_1/folder_1_1_3
 
 Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
-$ find 3.json
-find: ‘3.json’: No such file or directory
-
-Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
 $ find .. 3.json
 ..
 ../folder_1
@@ -164,10 +159,6 @@ $ find .. 3.json
 ../folder_1/folder_1_2
 ../folder_1/folder_1_3
 find: ‘3.json’: No such file or directory
-
-Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
-$ find 4.json
-find: ‘4.json’: No such file or directory
 
 Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
 $ find .. 4.json
@@ -189,10 +180,6 @@ $ find .. 4.json
 find: ‘4.json’: No such file or directory
 
 Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
-$ find -n 4.json
-find: unknown predicate `-n'
-
-Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
 $ find -name 4.json
 ./folder_1_1/4.json
 ./folder_1_1/folder_1_1_3/4.json
@@ -202,12 +189,6 @@ $ find -name *.json
 ./folder_1_1/4.json
 ./folder_1_1/5.json
 ./folder_1_1/folder_1_1_3/4.json
-
-Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
-$ grep -t folder_1_1/folder_1_1_1/1.txt
-grep: unknown option -- t
-Usage: grep [OPTION]... PATTERN [FILE]...
-Try 'grep --help' for more information.
 
 Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
 $ grep --help
@@ -354,10 +335,6 @@ Full documentation <https://www.gnu.org/software/coreutils/tail>
 or available locally via: info '(coreutils) tail invocation'
 
 Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
-$ tail -n[3] folder_1_1/folder_1_1_1/1.txt
-tail: invalid number of lines: ‘[3]’
-
-Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
 $ tail -n3 folder_1_1/folder_1_1_1/1.txt
 4 строка
 5 строка
@@ -400,11 +377,6 @@ Missing filename ("less --help" for help)
 $ less -s -N1 folder_1_1/folder_1_1_1/1.txt
 
 Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
-$ less -s -N 3 folder_1_1/folder_1_1_1/1.txt
-3: No such file or directory
-Press RETURN to continue
-
-Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
 $ less -s -N3 folder_1_1/folder_1_1_1/1.txt
 
 Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
@@ -413,10 +385,6 @@ Sat Feb 18 10:03:24     2023
 
 Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
 $ explorer folder_1_1/folder_1_1_1/1.txt
-
-Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
-$ curl://162.55.220.72:5005/terminal-hw-request
-bash: curl://162.55.220.72:5005/terminal-hw-request: No such file or directory
 
 Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания/TEST/folder_1
 $ curl http://162.55.220.72:5005/terminal-hw-request
@@ -479,10 +447,6 @@ drwxr-xr-x 1 Денис_Work 197121    0 Feb 12 12:39 'ДЗ Моб_тест'/
 $ vim script.sh
 
 Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания
-$ script.sh
-bash: script.sh: command not found
-
-Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания
 $ ./script.sh
 total 4
 drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 10:13 .
@@ -496,6 +460,5 @@ drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 10:13 dir_1_1_1
 drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 10:13 dir_1_1_2
 drwxr-xr-x 1 Денис_Work 197121 0 Feb 18 10:13 dir_1_1_3
 
-Денис_Work@DESKTOP-NN92SGB MINGW64 ~/Downloads/Telegram Desktop/Задания
 
 
