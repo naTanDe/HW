@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "9a6fd6c2-594e-4286-b746-365c72b0f7cb",
-		"name": "5HW_Postman",
+		"name": "5HW_Postman_1",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "26176457"
 	},
@@ -31,15 +31,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://162.55.220.72:5005/first",
-					"protocol": "http",
+					"raw": "{{url}}/first",
 					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
+						"{{url}}"
 					],
-					"port": "5005",
 					"path": [
 						"first"
 					]
@@ -53,15 +48,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://162.55.220.72:5005/get_method?age=36&name=Denis",
-					"protocol": "http",
+					"raw": "{{url}}/get_method?age=36&name=Denis",
 					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
+						"{{url}}"
 					],
-					"port": "5005",
 					"path": [
 						"get_method"
 					],
@@ -116,15 +106,10 @@
 					]
 				},
 				"url": {
-					"raw": "http://162.55.220.72:5005/user_info_1",
-					"protocol": "http",
+					"raw": "{{url}}/user_info_1",
 					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
+						"{{url}}"
 					],
-					"port": "5005",
 					"path": [
 						"user_info_1"
 					]
@@ -133,7 +118,7 @@
 			"response": []
 		},
 		{
-			"name": "/user_info_3",
+			"name": "EP_2",
 			"event": [
 				{
 					"listen": "test",
@@ -169,15 +154,10 @@
 					]
 				},
 				"url": {
-					"raw": "http://162.55.220.72:5005/user_info_3",
-					"protocol": "http",
+					"raw": "{{url}}/user_info_3",
 					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
+						"{{url}}"
 					],
-					"port": "5005",
 					"path": [
 						"user_info_3"
 					]
@@ -186,7 +166,7 @@
 			"response": []
 		},
 		{
-			"name": "/user_info_2",
+			"name": "EP_7",
 			"event": [
 				{
 					"listen": "test",
@@ -222,24 +202,16 @@
 					]
 				},
 				"url": {
-					"raw": "http://162.55.220.72:5005/user_info_2",
-					"protocol": "http",
+					"raw": "{{url}}user_info_2",
 					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
-					],
-					"port": "5005",
-					"path": [
-						"user_info_2"
+						"{{url}}user_info_2"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "/object_info_1",
+			"name": "EP_3",
 			"event": [
 				{
 					"listen": "test",
@@ -263,30 +235,28 @@
 						{
 							"key": "name",
 							"value": "Denis",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						},
 						{
 							"key": "age",
 							"value": "36",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						},
 						{
 							"key": "salary",
 							"value": "65000",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						}
 					]
 				},
 				"url": {
-					"raw": "http://162.55.220.72:5005/object_info_1?age=36&name=Denis&weight=77",
-					"protocol": "http",
+					"raw": "{{url}}/object_info_1?age=36&name=Denis&weight=77",
 					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
+						"{{url}}"
 					],
-					"port": "5005",
 					"path": [
 						"object_info_1"
 					],
@@ -309,7 +279,7 @@
 			"response": []
 		},
 		{
-			"name": "/object_info_2",
+			"name": "EP_4",
 			"event": [
 				{
 					"listen": "test",
@@ -329,34 +299,13 @@
 				"header": [],
 				"body": {
 					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "name",
-							"value": "Denis",
-							"type": "text"
-						},
-						{
-							"key": "age",
-							"value": "36",
-							"type": "text"
-						},
-						{
-							"key": "salary",
-							"value": "65000",
-							"type": "text"
-						}
-					]
+					"formdata": []
 				},
 				"url": {
-					"raw": "http://162.55.220.72:5005/object_info_2?age=36&name=Denis&salary=65000",
-					"protocol": "http",
+					"raw": "{{url}}/object_info_2?age=36&name=Denis&salary=65000",
 					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
+						"{{url}}"
 					],
-					"port": "5005",
 					"path": [
 						"object_info_2"
 					],
@@ -379,7 +328,7 @@
 			"response": []
 		},
 		{
-			"name": "/object_info_3",
+			"name": "EP_5",
 			"event": [
 				{
 					"listen": "test",
@@ -399,34 +348,13 @@
 				"header": [],
 				"body": {
 					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "name",
-							"value": "Denis",
-							"type": "text"
-						},
-						{
-							"key": "age",
-							"value": "36",
-							"type": "text"
-						},
-						{
-							"key": "salary",
-							"value": "65000",
-							"type": "text"
-						}
-					]
+					"formdata": []
 				},
 				"url": {
-					"raw": "http://162.55.220.72:5005/object_info_3?age=36&name=Denis&salary=65000",
-					"protocol": "http",
+					"raw": "{{url}}/object_info_3?age=36&name=Denis&salary=65000",
 					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
+						"{{url}}"
 					],
-					"port": "5005",
 					"path": [
 						"object_info_3"
 					],
@@ -449,7 +377,7 @@
 			"response": []
 		},
 		{
-			"name": "/object_info_4",
+			"name": "EP_6",
 			"event": [
 				{
 					"listen": "test",
@@ -469,34 +397,13 @@
 				"header": [],
 				"body": {
 					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "name",
-							"value": "Denis",
-							"type": "text"
-						},
-						{
-							"key": "age",
-							"value": "36",
-							"type": "text"
-						},
-						{
-							"key": "salary",
-							"value": "65000",
-							"type": "text"
-						}
-					]
+					"formdata": []
 				},
 				"url": {
-					"raw": "http://162.55.220.72:5005/object_info_4?age=36&name=Denis&salary=65000",
-					"protocol": "http",
+					"raw": "{{url}}/object_info_4?age=36&name=Denis&salary=65000",
 					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
+						"{{url}}"
 					],
-					"port": "5005",
 					"path": [
 						"object_info_4"
 					],
